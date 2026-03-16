@@ -3,12 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Happy Birthday, Yuju!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <main class="card-shell">
+    <section class="card" aria-labelledby="birthday-title">
+      <div class="sky sky-left"></div>
+      <div class="sky sky-right"></div>
+
+      <p class="eyebrow">A tiny birthday note</p>
+      <h1 id="birthday-title">Happy 8th Birthday, Yuju!</h1>
+      <p class="message">
+        You are 8 today. Have the happiest day with cake, fun, and lots of smiles.
+      </p>
+      <p class="signature">From your cute bunny friend.</p>
+
+      <button class="cheer-button" type="button">Tap for more sparkles</button>
+
+      <div class="characters" aria-hidden="true">
+        <div class="bunny">
+          <div class="ear ear-left"></div>
+          <div class="ear ear-right"></div>
+          <div class="face">
+            <span class="eye eye-left"></span>
+            <span class="eye eye-right"></span>
+            <span class="nose"></span>
+            <span class="mouth"></span>
+          </div>
+        </div>
+        <div class="star star-one"></div>
+        <div class="star star-two"></div>
+        <div class="star star-three"></div>
+      </div>
+
+      <div class="confetti" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script defer src="./main.js"></script>
 </body>
 </html>
